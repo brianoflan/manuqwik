@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- manu_qwik_v0.1.6 -->
+<!-- manu_qwik_v0.2.1 -->
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   
-  <!--
-  <xsl:output method="xml" indent="yes" omit-xml-declaration="no" />
-  <xsl:output method="html" indent="yes" omit-xml-declaration="no" />
-  -->
   <xsl:preserve-space elements="manuscript div footnotes footnote aside html head body" />
 
   <xsl:variable name="js_file" select="'mq.js'" /> 
@@ -78,23 +74,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <hr />
   </xsl:template>
   
-  <!-- Untested (using copy, apply-templates):
-  <xsl:template match="_aside">
-    <xsl:text>&#10;&#32;&#32;&#32;&#32;&#32;&#32;</xsl:text>
-    <ul>
-      <xsl:text>&#10;&#32;&#32;&#32;&#32;&#32;&#32;</xsl:text>
-      <div class="aside">
-        <xsl:copy>
-          <xsl:apply-templates select="node()|@*"/>
-        </xsl:copy>
-        <br />
-        <xsl:text>&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</xsl:text>
-      </div>
-      <xsl:text>&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</xsl:text>
-    </ul>
-  </xsl:template>
-  -->
-  
   <xsl:template match="aside | _aside">
     <xsl:text>&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</xsl:text>
     <ul>
@@ -104,9 +83,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
           <xsl:text>Aside:</xsl:text><br />
         </xsl:if>
         
-        <!--xsl:copy>
-          <xsl:apply-templates select="node()|@*"/>
-        </xsl:copy-->
         <xsl:apply-templates/>
           
         <xsl:text>&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</xsl:text>
@@ -121,6 +97,32 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:copy>
       <xsl:apply-templates select="node()|@*"/>
     </xsl:copy>
+    <!--
+    <xsl:text>&#10;<br />&#10;<br />&#10;<br />&#10;<br />&#10;<br />&#10;<br />&#10;<br />&#10;</xsl:text>
+    -->
+    <!--
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br /><xsl:text>&#10;</xsl:text><br />
+    <xsl:text>&#10;</xsl:text>
+    -->
   </xsl:template>
   
   <xsl:template match="/*/manuscript" >
@@ -135,12 +137,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <xsl:choose>
           <xsl:when test="$make_one_file='true'">
             <xsl:comment>link rel="stylesheet" type="text/css" href="<xsl:value-of select="$css_file" />"</xsl:comment>
-            
-            <!-- Doesn't work in Firefox: 
-            <xsl:text>&#10;&#32;&#32;</xsl:text><xsl:text disable-output-escaping="yes">&#60;style type="text/css"></xsl:text>
-            <xsl:value-of select="document(concat($css_file,'.xml'))" disable-output-escaping="yes" />
-            <xsl:text>&#10;&#32;&#32;</xsl:text><xsl:text disable-output-escaping="yes">&#60;/style></xsl:text>
-            -->
             
             <xsl:element name="style">
               <xsl:attribute name="type">
@@ -171,12 +167,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
           <xsl:when test="$make_one_file='true'">
             <xsl:comment>script type="text/javascript" src="<xsl:value-of select="$js_file" />"</xsl:comment>
             
-            <!-- Doesn't work in Firefox: 
-            <xsl:text>&#10;&#32;&#32;</xsl:text><xsl:text disable-output-escaping="yes">&#60;script type="text/javascript"></xsl:text>
-            <xsl:value-of select="document(concat($js_file,'.xml'))" disable-output-escaping="yes" />
-            <xsl:text>&#10;&#32;&#32;</xsl:text><xsl:text disable-output-escaping="yes">&#60;/script></xsl:text>
-            -->
-            
             <xsl:element name="script">
               <xsl:attribute name="type">
                 <xsl:text>text/javascript</xsl:text>
@@ -186,12 +176,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             
           </xsl:when>
           <xsl:when test="$make_one_file='false'">
-            <!--
-            <xsl:text>&#10;&#32;&#32;</xsl:text>
-            <xsl:text disable-output-escaping="yes">&#60;script type="text/javascript" src="</xsl:text>
-            <xsl:value-of select="$js_file" />
-            <xsl:text disable-output-escaping="yes">">&#60;</script></xsl:text>
-            -->
             <xsl:element name="script">
               <xsl:attribute name="type">
                 <xsl:text>text/javascript</xsl:text>
@@ -228,7 +212,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <!--div id="bodyDiv" class="bodyDiv" -->
         <div id="+" class="bodyDiv" >
           <xsl:text>&#10;&#32;&#32;&#32;&#32;</xsl:text>
-          <div class="bodyHeaderTitle" >
+          <div class="bodyHeaderTitle" data-type="nowiki" >
             <xsl:value-of select="@title" />
             <xsl:text>&#10;&#32;&#32;&#32;&#32;</xsl:text>
           </div>
