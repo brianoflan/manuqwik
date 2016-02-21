@@ -1,0 +1,51 @@
+
+  <style type="text/css" > /* <![CDATA[ */ 
+    div.bodyDiv {
+      /* No good in IE8. (Who uses IE8 anymore? My dumb work computer.)
+      font-family: "Arial Black", Gadget, sans-serif;
+      */
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
+    div.aside {
+      border-style: none ;
+      background-color: LightGray ;
+      padding-bottom: 6px ;
+      padding-left: 4px ;
+      margin: 10px 0px ;
+    }
+    div.footnote {
+      font-size: 0.8em ;
+      margin: 6px 0px ;
+    }
+    div.footnotes {
+      margin: 2px 0px ;
+    }
+    
+    
+    div.bodyDiv div {
+    /*
+      border: 2px solid;
+      border-radius: 20px;
+      padding: 10px 4px 7px 10px ;
+    */
+      margin-bottom: 10px ;
+    }
+    div.roundy {
+      border: 2px solid;
+      border-radius: 20px;
+      padding: 10px 4px 7px 10px ;
+    }
+    div.noDisp {
+      display: none ;
+    }
+    
+    div.bodyHeaderTitle {
+      border: 0;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .topLink {
+      font-size: 0.8em;
+    }
+  /* ]]> */ 
+  </style>

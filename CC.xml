@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<some_ignored_root_elem>
+  <manuscript title="ClearCase" >
+    <div id="toc" >
+      This is a quick introduction to some of the most important ClearCase concepts.
+      <ul>
+        <li>Intro
+          <ul>
+            <li>[[What is ClearCase]]
+            </li>
+            <li>[[What's a VOB]]
+            </li>
+            <li>[[What's a branch]]
+            </li>
+            <li>[[What is UCM]]
+            </li>
+            <li>[[What's a stream]]
+            </li>
+            <li>[[What's a view]]
+            </li>
+            <li>[[How to make a view]]
+            </li>
+            <li>[[How to make a stream]]
+            </li>
+          </ul>
+        </li>
+        <li>Common Issues
+          <ul>
+            <li>[[My view is missing]]!
+            </li>
+            <li>[[I need a new stream]].
+            </li>
+            <li>[[I need a new branch]].
+            </li>
+            <li>[[I need many, many new branches]].
+            </li>
+            <li>[[Local views]]
+            </li>
+            <li>[[But I need to have local views]]!
+            </li>
+          </ul>
+        </li>
+        <li>Terms
+          <ul>
+            <li>[[UCM]]
+            </li>
+            <li>[[VOB]]
+            </li>
+            <li>[[view]]
+            </li>
+            <li>[[branch]]
+            </li>
+            <li>[[stream]]
+            </li>
+            <li>[[integration stream]]
+            </li>
+            <li>[[int stream]]
+            </li>
+            <li>[[child stream]]
+            </li>
+            <li>[[dev stream]]
+            </li>
+            <li>[[sub stream]]
+            </li>
+            <li>[[sub-sub stream]]
+            </li>
+            <li>[[sub-dev stream]]
+            </li>
+            <li>[[grandchild stream]]
+            </li>
+            <li>[[project]]
+            </li>
+            <li>[[trunk]]
+            </li>
+            <li>[[main]]
+            </li>
+            <li>[[workspace]]
+            </li>
+            <li>[[view private]]
+            </li>
+            <li>[[view storage]]
+            </li>
+            <li>[[VOB storage]]
+            </li>
+            <li>[[checkout]]
+            </li>
+            <li>[[checkin]]
+            </li>
+            <li>[[rebase]]
+            </li>
+            <li>[[deliver]]
+            </li>
+            <li>[[deliver baselines]]
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="lorem1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <aside>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <b>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</b> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </aside>
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    <_aside>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </_aside>
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div id="lorem2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<footnote_ref>1</footnote_ref><footnote_ref num="2" />
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div id="div1" class="roundy" >div1 [[div2]] [[div3]] [[div 3]]
+      <div id="div1b" class="roundy" >div1b [[garbo]]
+      </div>
+      <div id="div1c" class="roundy">div1c [[div2]]
+      </div>
+    </div>
+    <div id="div2" class="roundy" >div2 [[div1]] [[div3]]
+    </div>
+    <div id="div 3" class="roundy" >div3 [[div1]] [[div2]] [[lorem1]] [[lorem2]]
+    </div>
+    <div id="Intro"><h2>Intro</h2>
+    </div>
+    <div id="What is ClearCase">abc1
+    </div>
+    <div id="What's a VOB">Whats a VOB1
+    </div>
+    <div id="What's_a_VOB">Whats a VOB2
+    </div>
+    <div id="Whats_a_VOB">Whats a VOB3
+    </div>
+    <div id="Common Issues"><h2>Common Issues</h2>
+    </div>
+    <div id="My view is missing">def1
+    </div>
+    <div id="Terms"><h2>Terms</h2>
+    </div>
+    <div id="UCM">
+    </div>
+    <div id="VOB">
+    </div>
+    <div id="view">
+    </div>
+    <div id="branch">
+    </div>
+    <div id="stream">
+    </div>
+    <div id="integration stream">
+    </div>
+    <div id="int stream">
+    </div>
+    <div id="child stream">
+    </div>
+    <div id="dev stream">
+    </div>
+    <div id="sub stream">
+    </div>
+    <div id="sub-sub stream">
+    </div>
+    <div id="sub-dev stream">
+    </div>
+    <div id="grandchild stream">
+    </div>
+    <div id="project">
+    </div>
+    <div id="trunk">
+    </div>
+    <div id="main">
+    </div>
+    <div id="workspace">
+    </div>
+    <div id="view private">
+    </div>
+    <div id="view storage">
+    </div>
+    <div id="VOB storage">
+    </div>
+    <div id="checkout">
+    </div>
+    <div id="checkin">
+    </div>
+    <div id="rebase">
+    </div>
+    <div id="deliver">
+    </div>
+    <div id="deliver baselines">
+    </div>
+    <div id="footnotesDiv" >
+      <footnotes>References:
+        <footnote num="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <b>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</b> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </footnote>
+        <footnote num="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <b>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</b> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </footnote>
+      </footnotes>
+    </div>
+    <span><div class="topLink" align="right" ><a href="#+">(top)</a></div></span>
+  </manuscript>
+
+</some_ignored_root_elem>
